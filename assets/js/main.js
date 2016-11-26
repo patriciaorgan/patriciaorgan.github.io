@@ -151,10 +151,9 @@ function validate() {
         return false;
 	} else {
 	   var response_message = "Thank you...! For Contacting me.\n" 
-	   + "Name:" + name + "\n"
-	   + "Email:" + email + "\n"
-	   + "Message:" + message + "\n"
-	   + "This is a Contact Confirmation mail.\n"
+	   + "Name: " + name + "\n"
+	   + "Email: " + email + "\n"
+	   + "Message: " + message + "\n"
 	   + "I Will contact You as soon as possible.";
 	   alert(response_message);
 	   document.myform.action = "https://formspree.io/patriciaorgan82@gmail.com";
