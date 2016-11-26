@@ -133,3 +133,32 @@
 	});
 
 })(jQuery);
+
+
+function validate() {
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var message = $("#message").val();
+    var atpos = email.indexOf("@");
+    var dotpos = email.lastIndexOf(".");    
+	$("#returnmessage").empty(); // To empty previous error/success message.
+	// Checking for blank fields.
+	if (name == '' || email == '' || message == '') {
+	  alert("Please Fill Required Fields");
+	  return false;
+	} else if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length) {
+        alert("Not a valid e-mail address");
+        return false;
+	} else {
+	   document.myform.action = "https://formspree.io/patriciaorgan82@gmail.com";
+	   //reset form
+	   document.getElementById("form").reset();
+	   var message = "<br/>Thank you...! For Contacting me.<br/><br/>"
+	+ "Name:" + name +"<br/>"
+	+ "Email:" + email + "<br/>"
+	+ "Message:" + message +"<br/><br/>"
+	+ "This is a Contact Confirmation mail.<br/>"
+	+ "I Will contact You as soon as possible.";
+	   alert(message);
+	}
+}
