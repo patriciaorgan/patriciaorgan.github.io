@@ -150,15 +150,15 @@ function validate() {
         alert("Not a valid e-mail address");
         return false;
 	} else {
-	   document.myform.action = "https://formspree.io/patriciaorgan82@gmail.com";
-	   //reset form
-	   document.getElementById("form").reset();
-	   var message = "<br/>Thank you...! For Contacting me.<br/><br/>"
-	+ "Name:" + name +"<br/>"
+	   var message = "<br/>Thank you...! For Contacting me.<br/><br/>" + "Name:" + name +"<br/>"
 	+ "Email:" + email + "<br/>"
 	+ "Message:" + message +"<br/><br/>"
 	+ "This is a Contact Confirmation mail.<br/>"
 	+ "I Will contact You as soon as possible.";
 	   alert(message);
+	   document.myform.action = "https://formspree.io/patriciaorgan82@gmail.com";
+	   //reset form
+	   document.getElementById("form").reset();
+	   
 	}
 }
