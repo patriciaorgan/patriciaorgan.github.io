@@ -2439,26 +2439,6 @@
 			color: #b2b2b2 !important;
 			cursor: default;
 		}
-/* Work Item */
-/* 		.work-item {
-		    margin: 0 1em 2em 1em;  /* Adjust margin between work items */
-		    flex: 1 1 45%; /* Allow work items to take up more space and be more flexible */
-		}
-		
-		.work-item .image {
-		    margin: 0 0 1.5em 0;  /* Adjust margin between image and text */
-		    display: block;         /* Ensure images are displayed as block elements */
-		    width: 100%;            /* Make images take up 100% of the container width */
-		    height: auto;           /* Maintain aspect ratio */
-		}
-		
-		.work-item img {
-		    width: 100%;            /* Ensure the image fills the container */
-		    height: auto;           /* Maintain aspect ratio */
-		    object-fit: cover;      /* Ensures the image covers the area properly */
-		} */
-
-
 
 /* Work Item */
 		.work-item {
@@ -2485,14 +2465,15 @@
 		  object-position: center;   /* Ensures the image stays centered if it's cropped */
 		}
 		
-		/* Set minimum height for the content area (heading + paragraph) */
+/* 		/* Set minimum height for the content area (heading + paragraph) */
 		.work-item h3 {
 		  font-size: 1em;
 		  margin: 0 0 0.5em 0;
 		  flex-grow: 0;              /* Prevent heading from growing */
-		}
+		} 
+*/
 		
-		.work-item p {
+/* 		.work-item p {
 		  font-size: 0.8em;
 		  line-height: 1.5em;
 		  margin: 0;
@@ -2514,7 +2495,7 @@
 		.row > .work-item {
 		  flex-basis: 48%;           /* Make sure the work-item elements fit within the row */
 		  box-sizing: border-box;
-		}
+		} */
  
 /* Header */
 
@@ -3129,7 +3110,7 @@
 			        margin-bottom: 1.2em; /* Reduce space between image and text */
 			    } */
 		
-			.work-item {
+/* 			.work-item {
 			    width: 100%;            /* Change to 1 column on smaller screens */
 			    height: 350px;           /* Adjust height for mobile screens */
 			  }
@@ -3142,7 +3123,7 @@
 			  /* Adjust paragraph text for mobile */
 			  .work-item p {
 			    -webkit-line-clamp: 3;  /* Allow 3 lines for mobile screens */
-			  }
+			  } */
 
 	}
 
