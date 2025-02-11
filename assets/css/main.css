@@ -2448,6 +2448,13 @@
 
 		.work-item .image {
 			margin: 0 0 1.5em 0;
+			height: 350px; /* Set uniform height */
+		}
+		/* Apply height to the images to make them consistent */
+		.work-item img {
+		    height: 100%;
+		    object-fit: cover; /* Ensures images don't stretch but cover their container */
+		    width: 100%; /* Ensure image fills the container width */
 		}
 
 		.work-item h3 {
@@ -2459,6 +2466,11 @@
 			font-size: 0.8em;
 			line-height: 1.5em;
 			margin: 0;
+			height: 3em; /* Fixed height for paragraph */
+			overflow: hidden; /* Hide any text that overflows */
+			display: -webkit-box;
+			-webkit-line-clamp: 2; /* Show only 2 lines of text */
+			-webkit-box-orient: vertical;
 		}
 
 /* Header */
@@ -3064,7 +3076,10 @@
 				.poptrox-popup .nav-previous:before {
 					margin-top: -1em;
 				}
-
+		/* work-item*/
+			.work-item {
+		        	width: 100%; /* Stack items vertically on smaller screens */
+		    	}
 	}
 
 /* XSmall */
