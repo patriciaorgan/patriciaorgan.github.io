@@ -2490,85 +2490,6 @@
 		  justify-content: space-between;
 		}
 
-/* 		.work-item {
-		  margin: 0 0 2em 0;
-		  width: 50%;                /* Two columns by default */
-		  box-sizing: border-box;
-		}
-		
-		.work-item .image {
-		  margin: 0 0 1.5em 0;
-		  display: block;
-		}
-		
-		/* Ensure all images are the same size */
-		.work-item img {
-		  width: 100%;               /* Image takes up 100% of the container width */
-		  height: 300px;             /* Fixed height for consistency across images */
-		  object-fit: cover;         /* Ensures image fills the container while maintaining aspect ratio */
-		  object-position: center;   /* Ensures the image stays centered if it's cropped */
-		}
-		
-		/* Text styling */
-		.work-item h3 {
-		  font-size: 1em;
-		  margin: 0 0 0.5em 0;
-		}
-		
-		.work-item p {
-		  font-size: 0.8em;
-		  line-height: 1.5em;
-		  margin: 0;
-		}
-		
-		/* Layout: Two columns for larger screens */
-		.row {
-		  display: flex;
-		  flex-wrap: wrap;
-		  justify-content: space-between;
-		}
-	
- */
-
-/* 	.work-item {
-		margin: 0 0 2em 0;
-	}
-
-		.work-item .image {
-			margin: 0 0 1.5em 0;
-			display: block;   /* Ensure the image container is block-level */
-		}
-
-		.work-item h3 {
-			font-size: 1em;
-			margin: 0 0 0.5em 0;
-		}
-
-		.work-item p {
-			font-size: 0.8em;
-			line-height: 1.5em;
-			margin: 0;
-		}
-		/* Ensure images are consistent in size and aspect ratio */
-		.work-item img {
-		  width: 100%;               /* Image takes up 100% of the container width */
-		  height: 200px;             /* Fixed height for consistency across images */
-		  object-fit: cover;         /* Ensures image covers the area without stretching */
-		  object-position: center;   /* Ensures image is centered if cropped */
-		}
-		
-		/* Text styling */
-		.work-item h3 {
-		  font-size: 1em;
-		  margin: 0 0 0.5em 0;
-		}
-		
-		.work-item p {
-		  font-size: 0.8em;
-		  line-height: 1.5em;
-		  margin: 0;
-		}
- */
 /* Header */
 
 	#header {
@@ -3187,14 +3108,6 @@
 			  .work-item p {
 			    -webkit-line-clamp: 3;  /* Allow 3 lines for mobile screens */
 			  }
-/* 			 .work-item {
-			    width: 100%;            /* Change to 1 column on smaller screens */
-			  }
-			
-			  /* Adjust image height for mobile */
-			  .work-item img {
-			    height: 150px;          /* Adjust height for mobile screens */
-		 	 } */
 
 	}
 
