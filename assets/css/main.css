@@ -2448,7 +2448,6 @@
 
 		.work-item .image {
 			margin: 0 0 1.5em 0;
-			display: block;   /* Ensure the image container is block-level */
 		}
 
 		.work-item h3 {
@@ -2460,25 +2459,6 @@
 			font-size: 0.8em;
 			line-height: 1.5em;
 			margin: 0;
-		}
-		/* Ensure images are consistent in size and aspect ratio */
-		.work-item img {
-		  width: 100%;               /* Image takes up 100% of the container width */
-		  height: 200px;             /* Fixed height for consistency across images */
-		  object-fit: cover;         /* Ensures image covers the area without stretching */
-		  object-position: center;   /* Ensures image is centered if cropped */
-		}
-		
-		/* Text styling */
-		.work-item h3 {
-		  font-size: 1em;
-		  margin: 0 0 0.5em 0;
-		}
-		
-		.work-item p {
-		  font-size: 0.8em;
-		  line-height: 1.5em;
-		  margin: 0;
 		}
 
 /* Header */
@@ -3084,10 +3064,6 @@
 				.poptrox-popup .nav-previous:before {
 					margin-top: -1em;
 				}
-		/* work-item */
-			.work-item img {
-			    	height: 150px;         /* Adjust height for mobile screens */
-			}
 
 	}
 
