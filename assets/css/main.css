@@ -2468,7 +2468,7 @@
 		  display: flex;
 		  flex-direction: column;
 		  justify-content: space-between;
-		  height: 500px;             /* Set a fixed height for the work item */
+		  height: 400px;             /* Set a fixed height for the work item */
 		}
 		
 		.work-item .image {
@@ -2480,7 +2480,7 @@
 		/* Ensure all images are the same size */
 		.work-item img {
 		  width: 100%;               /* Image takes up 100% of the container width */
-		  height: 400px;             /* Fixed height for consistency across images */
+		  height: 80%;             /* Fixed height for consistency across images */
 		  object-fit: cover;         /* Ensures image fills the container while maintaining aspect ratio */
 		  object-position: center;   /* Ensures the image stays centered if it's cropped */
 		}
@@ -2512,7 +2512,7 @@
 		}
 		
 		.row > .work-item {
-		  flex-basis: 65%;           /* Make sure the work-item elements fit within the row */
+		  flex-basis: 48%;           /* Make sure the work-item elements fit within the row */
 		  box-sizing: border-box;
 		}
  
