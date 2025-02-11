@@ -2462,7 +2462,7 @@
 
 /* Work Item */
 		.work-item {
-		  margin: 0 0 2em 0;
+		  margin: 0 1em 3em 1em;
 		  width: 50%;                /* Two columns by default */
 		  box-sizing: border-box;
 		  display: flex;
@@ -2480,7 +2480,7 @@
 		/* Ensure all images are the same size */
 		.work-item img {
 		  width: 100%;               /* Image takes up 100% of the container width */
-		  height: 75%;             /* Fixed height for consistency across images */
+		  height: 80%;             /* Fixed height for consistency across images */
 		  object-fit: cover;         /* Ensures image fills the container while maintaining aspect ratio */
 		  object-position: center;   /* Ensures the image stays centered if it's cropped */
 		}
