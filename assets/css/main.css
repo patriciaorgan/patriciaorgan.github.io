@@ -2441,62 +2441,46 @@
 		}
 
 /* Work Item */
-		.work-item {
-		  margin: 0 1em 3em 1em;
-		  width: 50%;                /* Two columns by default */
-		  box-sizing: border-box;
-		  display: flex;
-		  flex-direction: column;
-		  justify-content: space-between;
-		  height: 350px;             /* Set a fixed height for the work item */
-		}
-		
+
+	.work-item {
+		margin: 0 0 2em 0;
+	}
+
 		.work-item .image {
-		  margin: 0 0 1.5em 0;
-		  display: block;
-		  flex-shrink: 0;            /* Prevent image from shrinking */
+			margin: 0 0 1.5em 0;
+			display: block;   /* Ensure the image container is block-level */
 		}
-		
-		/* Ensure all images are the same size */
+
+		.work-item h3 {
+			font-size: 1em;
+			margin: 0 0 0.5em 0;
+		}
+
+		.work-item p {
+			font-size: 0.8em;
+			line-height: 1.5em;
+			margin: 0;
+		}
+		/* Ensure images are consistent in size and aspect ratio */
 		.work-item img {
 		  width: 100%;               /* Image takes up 100% of the container width */
-		  height: 80%;             /* Fixed height for consistency across images */
-		  object-fit: cover;         /* Ensures image fills the container while maintaining aspect ratio */
-		  object-position: center;   /* Ensures the image stays centered if it's cropped */
+		  height: 200px;             /* Fixed height for consistency across images */
+		  object-fit: cover;         /* Ensures image covers the area without stretching */
+		  object-position: center;   /* Ensures image is centered if cropped */
 		}
 		
-/* 		/* Set minimum height for the content area (heading + paragraph) */
+		/* Text styling */
 		.work-item h3 {
 		  font-size: 1em;
 		  margin: 0 0 0.5em 0;
-		  flex-grow: 0;              /* Prevent heading from growing */
-		} 
-*/
+		}
 		
-/* 		.work-item p {
+		.work-item p {
 		  font-size: 0.8em;
 		  line-height: 1.5em;
 		  margin: 0;
-		  flex-grow: 1;              /* Allow paragraph to take remaining space */
-		  overflow: hidden;         /* Prevent paragraph from overflowing */
-		  display: -webkit-box;
-		  -webkit-line-clamp: 2;    /* Limit paragraph to 2 lines */
-		  -webkit-box-orient: vertical;
 		}
-		
-		
-		/* Layout: Two columns for larger screens */
-		.row {
-		  display: flex;
-		  flex-wrap: wrap;
-		  justify-content: space-between;
-		}
-		
-		.row > .work-item {
-		  flex-basis: 48%;           /* Make sure the work-item elements fit within the row */
-		  box-sizing: border-box;
-		} */
- 
+
 /* Header */
 
 	#header {
@@ -3101,29 +3085,9 @@
 					margin-top: -1em;
 				}
 		/* work-item */
-/* 			  .work-item {
-			        flex: 1 1 100%;      /* Full width on smaller screens */
-			        margin: 0 0 1.5em 0; /* Reduced margin for smaller screens */
-			    }
-			
-			    .work-item .image {
-			        margin-bottom: 1.2em; /* Reduce space between image and text */
-			    } */
-		
-/* 			.work-item {
-			    width: 100%;            /* Change to 1 column on smaller screens */
-			    height: 350px;           /* Adjust height for mobile screens */
-			  }
-			
-			  /* Adjust image height for mobile */
-			  .work-item img {
-			    height: 150px;          /* Adjust height for mobile screens */
-			  }
-			
-			  /* Adjust paragraph text for mobile */
-			  .work-item p {
-			    -webkit-line-clamp: 3;  /* Allow 3 lines for mobile screens */
-			  } */
+			.work-item img {
+			    	height: 150px;         /* Adjust height for mobile screens */
+			}
 
 	}
 
