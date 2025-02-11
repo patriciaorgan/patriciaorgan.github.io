@@ -2483,11 +2483,17 @@
 		  -webkit-box-orient: vertical;
 		}
 		
+		
 		/* Layout: Two columns for larger screens */
 		.row {
 		  display: flex;
 		  flex-wrap: wrap;
 		  justify-content: space-between;
+		}
+		
+		.row > .work-item {
+		  flex-basis: 48%;           /* Make sure the work-item elements fit within the row */
+		  box-sizing: border-box;
 		}
 
 /* Header */
