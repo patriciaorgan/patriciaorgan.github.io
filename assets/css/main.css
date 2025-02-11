@@ -2439,8 +2439,27 @@
 			color: #b2b2b2 !important;
 			cursor: default;
 		}
-
 /* Work Item */
+		.work-item {
+		    margin: 0 1em 2em 1em;  /* Adjust margin between work items */
+		    flex: 1 1 45%; /* Allow work items to take up more space and be more flexible */
+		}
+		
+		.work-item .image {
+		    margin: 0 0 1.5em 0;  /* Adjust margin between image and text */
+		    display: block;         /* Ensure images are displayed as block elements */
+		    width: 100%;            /* Make images take up 100% of the container width */
+		    height: auto;           /* Maintain aspect ratio */
+		}
+		
+		.work-item img {
+		    width: 100%;            /* Ensure the image fills the container */
+		    height: auto;           /* Maintain aspect ratio */
+		    object-fit: cover;      /* Ensures the image covers the area properly */
+		}
+
+
+/* /* Work Item */
 		.work-item {
 		  margin: 0 0 2em 0;
 		  width: 50%;                /* Two columns by default */
@@ -2495,7 +2514,7 @@
 		  flex-basis: 48%;           /* Make sure the work-item elements fit within the row */
 		  box-sizing: border-box;
 		}
-
+ */
 /* Header */
 
 	#header {
@@ -3100,7 +3119,16 @@
 					margin-top: -1em;
 				}
 		/* work-item */
-			.work-item {
+			  .work-item {
+			        flex: 1 1 100%;      /* Full width on smaller screens */
+			        margin: 0 0 1.5em 0; /* Reduced margin for smaller screens */
+			    }
+			
+			    .work-item .image {
+			        margin-bottom: 1.2em; /* Reduce space between image and text */
+			    }
+		
+/* 			.work-item {
 			    width: 100%;            /* Change to 1 column on smaller screens */
 			    height: 350px;           /* Adjust height for mobile screens */
 			  }
@@ -3113,7 +3141,7 @@
 			  /* Adjust paragraph text for mobile */
 			  .work-item p {
 			    -webkit-line-clamp: 3;  /* Allow 3 lines for mobile screens */
-			  }
+			  } */
 
 	}
 
